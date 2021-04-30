@@ -1,0 +1,91 @@
+
+<div class="modal fade form-modal" id="orderModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="container">
+        <div class="modal-body">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="section-header">
+            <h2>Отправить запрос</h2>
+          </div>
+          <div class="project-form">
+            <div class="row">
+              <div class="col project-form-col-descr">
+                <div class="project-form-descr">
+                  <p>Небольшой текст к заявке. Напишите нам и наш специалист свяжется с вами в ближайшее время</p>
+                </div>
+              </div>
+              <div class="col project-form-col-form">
+                <form>
+                  <div class="row">
+                    <div class="col project-form-col-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_name">Ваше имя</label>
+                        <input type="text" name="order_name" id="order_name" required="required"/>
+                      </div>
+                    </div>
+                    <div class="col project-form-col-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="order_phone" id="order_phone" required="required"/>
+                      </div>
+                    </div>
+                    <div class="col project-form-col-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_email">Ваш e-mail</label>
+                        <input type="email" name="order_email" id="order_email" required="required"/>
+                      </div>
+                    </div>
+                    <div class="col project-form-col-wide">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_message">Ваше сообщение</label>
+                        <textarea class="textarea-autogrow" name="order_message" id="order_message" rows="1"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <div class="row">
+                      <div class="col project-form-col-narrow">
+                        <div class="form-file">
+                          <input type="file" name="order_file" id="order_file" data-label="Прикрепить файл"/>
+                        </div>
+                      </div>
+                      <div class="col project-form-col-narrow">
+                        <div class="form-button">
+                          <input class="btn btn-1" type="submit" value="Отправить"/>
+                        </div>
+                      </div>
+                      <div class="col project-form-col-narrow">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить” вы даёте своё согласие с <a href="#">Политикой конфиденциальности</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade small-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="success-modal-ttl">
+          <p>Заявка отправлена</p>
+        </div>
+        <div class="success-modal-text">
+          <p>Ожидайте звонка менеджера или письма на почту</p>
+        </div>
+        <div class="success-modal-button">
+          <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
