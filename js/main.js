@@ -45,6 +45,24 @@ $(window).on("load", function() {
 var baseUrl = "";
 
 $(document).ready(function() {
+	
+	$(".home-serv-tmb").each(function () {
+
+		var curTmb = $(this);
+
+		console.log(curTmb.closest(".col").prevAll().length)
+		
+		var thisPic = $(".services-slider").find(".slide").filter(function () {
+
+			return curTmb.closest(".col").prevAll().length == $(this).prevAll().length;
+
+		}).clone();
+		
+		$(this).prepend('<div class="home-serv-tmb-pic"></div>');
+
+		$(this).find(".home-serv-tmb-pic").append(thisPic);
+		
+	});
 
 	// Home services
 
@@ -1817,7 +1835,18 @@ function initSliders() {
 				fade: false,
 				dots: false,
 				rows: 0,
-				speed: 750
+				speed: 750,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							arrows: false,
+							dots: true
+						}
+					}
+				]
 			});
 
 		}
